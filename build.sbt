@@ -5,17 +5,18 @@ organization := "com.mlh"
 
 version := "0.1.0-SNAPSHOT"
 
-homepage := Some(url("https://github.com/mhamrah/spray-sample"))
+homepage := Some(url("https://github.com/torito1984/spray-sample"))
 
-startYear := Some(2013)
+startYear := Some(2015)
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/mhamrah/spray-sample"),
-    "scm:git:https://github.com/mhamrah/spray-sample.git",
-    Some("scm:git:git@github.com:mhamrah/spray-sample.git")
+    url("https://github.com/torito1984/spray-sample"),
+    "scm:git:https://github.com/torito1984/spray-sample",
+    Some("scm:git:torito1984@github.com:torito194/spray-sample.git")
   )
 )
+
 
 /* scala versions and options */
 scalaVersion := "2.11.4"
