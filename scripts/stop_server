@@ -8,5 +8,6 @@ if [ -e $PIDFILE ]
 	then rm $PIDFILE
 fi
 
+rm -r /usr/lib/spray-test
 
 

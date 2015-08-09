@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install openjdk-7-jdk
+apt-get update
+apt-get install openjdk-7-jdk -y
 mkdir /usr/lib/spray-test
 

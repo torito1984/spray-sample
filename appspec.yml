@@ -1,13 +1,14 @@
 version: 0.0
 os: linux
 files:
-  - source : ./target/scala-2.11/spray-sample-assembly-0.1.0-SNAPSHOT.jar
+  - source : spray-sample-assembly-0.1.0-SNAPSHOT.jar
     destination : /usr/lib/spray-test
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
+  ApplicationStart:
     - location: scripts/start_server
       timeout: 300
       runas: root
