@@ -41,7 +41,7 @@ trait SpraySampleService extends HttpService {
   val spraysampleRoute = {
     path("entity") {
       get {
-        complete(List(Foo("foo1"), Foo("foo2")))
+        complete(List(Foo("foo1"), Foo("super david foo2")))
       } ~
         post {
           respondWithStatus(Created) {
