@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DESC="Spray service Test"
+NAME=spray-serv
+PIDFILE=/var/run/$NAME.pid
+RUN_AS=root
+COMMAND=/usr/bin/java
+OPTS="-jar /usr/lib/spray-test/spray-sample-assembly-0.1.0-SNAPSHOT.jar"
+
+start-stop-daemon --start --quiet --background --make-pidfile --pidfile $PIDFILE --chuid $RUN_AS --exec $COMMAND -- $OPTS
+

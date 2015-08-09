@@ -1,0 +1,12 @@
+#!/bin/bash
+
+NAME=spray-serv
+PIDFILE=/var/run/$NAME.pid
+
+start-stop-daemon --stop --quiet --pidfile $PIDFILE
+if [ -e $PIDFILE ]
+	then rm $PIDFILE
+fi
+
+
+
